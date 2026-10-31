@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sun Scientific | Sheridan Medical Consulting</title><style>
+:root{--navy:#09335E;--teal:#009FA9;--bg:#fff;--soft:#F2F7FA;--line:#DCE6EE;--txt:#1C2B3A;--mut:#5A6B7B}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font:16px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--txt);background:var(--bg);padding-bottom:96px}
+img{max-width:100%;display:block}
+.draft{background:#FFD600;color:#111;font-weight:700;font-size:13px;text-align:center;padding:8px 12px;letter-spacing:.02em}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+.brand b{color:var(--navy);font-size:15px}.brand span{color:var(--teal);font-size:12px;font-weight:600}
+.navwrap{position:relative}
+nav{display:flex;gap:8px;overflow-x:auto;padding:0 16px 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;min-height:40px;display:flex;align-items:center;padding:0 14px;border-radius:20px;background:var(--soft);color:var(--navy);text-decoration:none;font-weight:600;font-size:15px}
+nav a.on{background:var(--navy);color:#fff}
+.navwrap:after{content:"";position:absolute;right:0;top:0;bottom:10px;width:32px;background:linear-gradient(90deg,rgba(255,255,255,0),#fff);pointer-events:none}
+main{max-width:720px;margin:0 auto}
+section{padding:28px 16px}
+h1{font-size:34px;line-height:1.1;margin:0;color:var(--navy)}
+h2{font-size:22px;color:var(--navy);margin:0 0 6px}
+.eyebrow{color:var(--teal);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:0 0 6px}
+.lede{font-size:18px;margin:10px 0 18px}
+.mut{color:var(--mut);font-size:14px}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;border:0;border-radius:12px;font-family:inherit;font-weight:700;font-size:17px;line-height:1.2;cursor:pointer;text-decoration:none}
+.btn.pri{background:var(--teal);color:#fff}.btn.sec{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.hero{background:linear-gradient(180deg,var(--soft),#fff)}
+.heroimg{margin-top:18px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff}
+figcaption,.cap{font-size:13px;color:var(--mut);padding:8px 10px}
+.steps{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 12px;-webkit-overflow-scrolling:touch}
+.step{flex:0 0 78%;scroll-snap-align:start;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.step .t{padding:10px 12px}.step .d{display:inline-block;background:var(--navy);color:#fff;font-weight:700;font-size:13px;border-radius:8px;padding:3px 8px}
+.step h3{margin:6px 0 2px;font-size:17px;color:var(--navy)}
+.step img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.hint{font-size:13px;color:var(--teal);font-weight:600}
+.note{background:#FFF8E1;border-left:4px solid #F2B705;padding:10px 12px;font-size:14px;border-radius:6px;margin-top:10px}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.trio figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.trio figcaption{font-size:12px;padding:6px}
+details{border:1px solid var(--line);border-radius:14px;margin:10px 0;background:#fff;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:14px 48px 14px 16px;position:relative;min-height:56px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:16px;top:12px;font-size:24px;color:var(--teal);font-weight:700}
+details[open]>summary:after{content:"\2212"}
+summary b{display:block;color:var(--navy);font-size:17px}summary small{display:block;color:var(--mut);font-size:14px;margin-top:2px}
+.body{padding:0 16px 16px}.body ul{padding-left:20px;margin:6px 0}.body li{margin:4px 0}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}th{color:var(--navy)}
+.case{border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.case .tag{display:inline-block;background:var(--teal);color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px}
+.case .hd{padding:14px 16px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.pair figure{margin:0;background:#fff}.pair img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.facts{display:grid;gap:8px;padding:12px 16px}
+.facts div{background:var(--soft);border-radius:10px;padding:10px 12px}.facts span{display:block;font-size:12px;font-weight:700;color:var(--teal);text-transform:uppercase}
+.case details{margin:0 16px 16px}
+.ph{background:repeating-linear-gradient(45deg,#F2F7FA,#F2F7FA 10px,#E8EFF5 10px,#E8EFF5 20px);border:1px dashed #9FB3C4;border-radius:12px;padding:22px;text-align:center;color:var(--mut);font-size:14px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.vs div{border:1px solid var(--line);border-radius:12px;padding:12px;font-size:15px}.vs b{color:var(--navy)}
+footer{background:var(--navy);color:#fff;padding:24px 16px;text-align:center;font-size:14px}footer b{display:block;font-size:16px}footer .tl{color:#7FE3EA}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(9,51,94,.08)}
+.bar .btn{max-width:688px;margin:0 auto}
+.scrim{position:fixed;inset:0;background:rgba(9,51,94,.45);z-index:40;opacity:0;pointer-events:none;transition:opacity .2s}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-radius:20px 20px 0 0;padding:10px 16px calc(20px + env(safe-area-inset-bottom));transform:translateY(105%);transition:transform .25s ease;max-width:720px;margin:0 auto}
+.open .scrim{opacity:1;pointer-events:auto}.open .sheet{transform:none}
+.grab{width:44px;height:5px;border-radius:3px;background:#C9D6E1;margin:0 auto 12px}
+.sheet h3{margin:0 0 4px;color:var(--navy);font-size:20px}.sheet .btn{margin-top:10px}
+.close{background:none;border:0;color:var(--mut);font-family:inherit;font-weight:600;font-size:15px;width:100%;min-height:48px;margin-top:6px;cursor:pointer}
+
+.big{background:var(--navy);color:#fff;border-radius:18px;padding:22px 18px;text-align:center}
+.big .n{font-size:76px;font-weight:800;line-height:1;color:#7FE3EA}.big p{margin:8px 0 0;font-size:17px;font-weight:600}.big small{display:block;color:#C9D6E3;font-size:13px;margin-top:10px;line-height:1.4}
+.ic{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ic div{background:var(--soft);border-radius:14px;padding:14px}.ic b{display:block;color:var(--navy);font-size:16px}.ic span{font-size:14px;color:var(--mut)}
+.flow{counter-reset:f;list-style:none;padding:0;margin:0}.flow li{counter-increment:f;position:relative;padding:10px 0 10px 46px;border-bottom:1px solid var(--line)}.flow li:before{content:counter(f);position:absolute;left:0;top:8px;width:32px;height:32px;border-radius:50%;background:var(--teal);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.chk label{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}.chk input{width:22px;height:22px;accent-color:var(--teal);flex:none;margin-top:1px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.tabs button{min-height:44px;padding:0 14px;border-radius:22px;border:2px solid var(--navy);background:#fff;color:var(--navy);font:600 15px inherit;font-family:inherit;cursor:pointer}.tabs button.on{background:var(--navy);color:#fff}
+.panel{background:var(--soft);border-radius:14px;padding:14px;font-size:15px}
+.cov{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}.cov div{border:1px solid var(--line);border-radius:12px;padding:12px 6px}.cov b{display:block;font-size:20px;color:var(--teal)}.cov span{font-size:13px;color:var(--mut)}
+.stat{background:var(--navy);color:#fff;border-radius:16px;padding:18px 16px}.stat .nums{display:flex;gap:16px;align-items:flex-end;margin:8px 0}.stat .n{font-size:44px;font-weight:800;line-height:1;color:#7FE3EA}.stat .n2{font-size:30px;font-weight:700;line-height:1;color:#C9D6E3}.stat small{display:block;font-size:13px;color:#C9D6E3}
+.lvl{display:inline-block;font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px;background:var(--teal);color:#fff}.lvl.o{background:#4F5D6B}.lvl.w{background:#B7791F}
+.take{font-size:16px;font-weight:700;color:var(--navy);margin:8px 0 0}
+.warnbox{background:#FDECEC;border-left:4px solid #C0392B;padding:10px 12px;border-radius:6px;font-size:14px;margin-top:10px}
+section{padding:24px 16px}body{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+</style></head>
+<body>
+<header><div class="brand"><b>Sheridan Medical Consulting</b><span>Better Options, Better Outcomes</span></div><div class="navwrap"><nav id="nav"><a href="#overview" class=on>Overview</a><a href="#dme">Aero-Wrap DME</a><a href="#supplies">Practice supplies</a><a href="#contact">Contact</a></nav></div></header>
+<main><section id="overview" class="hero"><p class="eyebrow">Sun Scientific</p><h1>Sun Scientific Products</h1>
+<p class="lede">Two separate workflows. Patient-billed DME and practice-purchased supplies are never ordered the same way.</p><button class="btn pri" data-open>Talk With Sheridan</button></section>
+<section id="dme"><p class="eyebrow">Patient-billed DME</p><h2>Aero-Wrap&reg;</h2><div class="case"><div class="hd"><span class="lvl">Insurance billed</span><p class="take">Prescribed by your practice, supplied and billed by the DME supplier (Gramatan Health Supplies) through Parachute Health or fax.</p></div>
+<div style="padding:0 16px 16px"><a class="btn sec" href="aero-wrap.html">Open the Aero-Wrap page</a></div></div></section>
+<section id="supplies"><p class="eyebrow">Practice-purchased supplies</p><h2>Bought by the clinic for in-office use</h2><p class="mut">Not billed to the patient's insurance through this program.</p><p>AeroCare System, ExuCare, ExuCare Plus, UnnaCare and AeroBolster.</p><a class="btn sec" href="sun-scientific-facility.html">Open practice supplies</a><p class="mut" style="margin-top:10px">Coming soon: RaviWrap, expected around mid-December 2026.</p></section>
+<section id="forms"><p class="eyebrow">Forms</p><h2>Need forms or pricing?</h2><p>Contact Sheridan for current order forms and practice purchasing details.</p></section>
+<section id="contact"><p class="eyebrow">Contact</p><h2>Talk with Sheridan</h2><p>Text Abiad and we will follow up.</p><button class="btn pri" data-open>Talk With Sheridan</button><p class="mut" style="margin-top:10px">Please do not include patient information in text messages.</p></section>
+</main><footer><b>Sheridan Medical Consulting</b><span class="tl">Better Options, Better Outcomes</span><br><small>For clinicians. Manufacturer materials used with permission.</small></footer>
+<div class="bar"><button class="btn pri" data-open>Talk With Sheridan</button></div><div class="scrim" data-close></div>
+<div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh" aria-hidden="true"><div class="grab"></div><h3 id="sh">How can we help?</h3><p class="mut" style="margin:0">Opens a text to Abiad. No patient details, please.</p><a class="btn pri" href="sms:+16464193538?&amp;body=Hi%20Abiad%2C%20I%27d%20like%20Sheridan%27s%20help%20prescribing%20Aero-Wrap%20from%20Sun%20Scientific.">Help Me Prescribe Aero-Wrap</a><a class="btn sec" href="sms:+16464193538?&amp;body=Hi%20Abiad%2C%20please%20send%20pricing%20for%20Sun%20Scientific%20practice%20supplies%20%28ExuCare%2C%20UnnaCare%29.">Practice Supply Pricing</a><a class="btn sec" href="sms:+16464193538?&amp;body=Hi%20Abiad%2C%20I%27d%20like%20a%20Sun%20Scientific%20in-service%20for%20our%20team.">Request an In-Service</a><button class="close" data-close>Cancel</button></div>
+<script>
+(function(){var b=document.body,s=document.querySelector('.sheet'),last;
+function open(e){last=e.currentTarget;b.classList.add('open');s.setAttribute('aria-hidden','false');b.style.overflow='hidden';s.querySelector('a').focus();}
+function close(){b.classList.remove('open');s.setAttribute('aria-hidden','true');b.style.overflow='';if(last)last.focus();}
+document.querySelectorAll('[data-open]').forEach(function(x){x.addEventListener('click',open)});
+document.querySelectorAll('[data-close]').forEach(function(x){x.addEventListener('click',close)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+var links=[].slice.call(document.querySelectorAll('#nav a')),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+if('IntersectionObserver'in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){var i=secs.indexOf(x.target);links.forEach(function(l,j){l.classList.toggle('on',i===j)});links[i].scrollIntoView({block:'nearest',inline:'center'});}})},{rootMargin:'-40% 0px -55% 0px'});secs.forEach(function(x){io.observe(x)});}
+})();
+document.querySelectorAll('.tabs').forEach(function(t){var bs=t.querySelectorAll('button');bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){x.classList.remove('on')});b.classList.add('on');var g=t.getAttribute('data-g');document.querySelectorAll('[data-p="'+g+'"]').forEach(function(p){p.hidden=p.getAttribute('data-k')!==b.getAttribute('data-k')})})})});</script></body></html>

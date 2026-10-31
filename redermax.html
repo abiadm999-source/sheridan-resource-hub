@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<title>Redermax by Kreate Medical | Sheridan Medical Consulting</title>
+<style>
+:root{--navy:#09335E;--teal:#009FA9;--bg:#fff;--soft:#F2F7FA;--line:#DCE6EE;--txt:#1C2B3A;--mut:#5A6B7B}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font:16px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--txt);background:var(--bg);padding-bottom:96px}
+img{max-width:100%;display:block}
+.draft{background:#FFD600;color:#111;font-weight:700;font-size:13px;text-align:center;padding:8px 12px;letter-spacing:.02em}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+.brand b{color:var(--navy);font-size:15px}.brand span{color:var(--teal);font-size:12px;font-weight:600}
+.navwrap{position:relative}
+nav{display:flex;gap:8px;overflow-x:auto;padding:0 16px 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;min-height:40px;display:flex;align-items:center;padding:0 14px;border-radius:20px;background:var(--soft);color:var(--navy);text-decoration:none;font-weight:600;font-size:15px}
+nav a.on{background:var(--navy);color:#fff}
+.navwrap:after{content:"";position:absolute;right:0;top:0;bottom:10px;width:32px;background:linear-gradient(90deg,rgba(255,255,255,0),#fff);pointer-events:none}
+main{max-width:720px;margin:0 auto}
+section{padding:28px 16px}
+h1{font-size:34px;line-height:1.1;margin:0;color:var(--navy)}
+h2{font-size:22px;color:var(--navy);margin:0 0 6px}
+.eyebrow{color:var(--teal);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:0 0 6px}
+.lede{font-size:18px;margin:10px 0 18px}
+.mut{color:var(--mut);font-size:14px}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;border:0;border-radius:12px;font-family:inherit;font-weight:700;font-size:17px;line-height:1.2;cursor:pointer;text-decoration:none}
+.btn.pri{background:var(--teal);color:#fff}.btn.sec{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.hero{background:linear-gradient(180deg,var(--soft),#fff)}
+.heroimg{margin-top:18px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff}
+figcaption,.cap{font-size:13px;color:var(--mut);padding:8px 10px}
+.steps{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 12px;-webkit-overflow-scrolling:touch}
+.step{flex:0 0 78%;scroll-snap-align:start;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.step .t{padding:10px 12px}.step .d{display:inline-block;background:var(--navy);color:#fff;font-weight:700;font-size:13px;border-radius:8px;padding:3px 8px}
+.step h3{margin:6px 0 2px;font-size:17px;color:var(--navy)}
+.step img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.hint{font-size:13px;color:var(--teal);font-weight:600}
+.note{background:#FFF8E1;border-left:4px solid #F2B705;padding:10px 12px;font-size:14px;border-radius:6px;margin-top:10px}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.trio figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.trio figcaption{font-size:12px;padding:6px}
+details{border:1px solid var(--line);border-radius:14px;margin:10px 0;background:#fff;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:14px 48px 14px 16px;position:relative;min-height:56px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:16px;top:12px;font-size:24px;color:var(--teal);font-weight:700}
+details[open]>summary:after{content:"\2212"}
+summary b{display:block;color:var(--navy);font-size:17px}summary small{display:block;color:var(--mut);font-size:14px;margin-top:2px}
+.body{padding:0 16px 16px}.body ul{padding-left:20px;margin:6px 0}.body li{margin:4px 0}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}th{color:var(--navy)}
+.case{border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.case .tag{display:inline-block;background:var(--teal);color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px}
+.case .hd{padding:14px 16px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.pair figure{margin:0;background:#fff}.pair img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.facts{display:grid;gap:8px;padding:12px 16px}
+.facts div{background:var(--soft);border-radius:10px;padding:10px 12px}.facts span{display:block;font-size:12px;font-weight:700;color:var(--teal);text-transform:uppercase}
+.case details{margin:0 16px 16px}
+.ph{background:repeating-linear-gradient(45deg,#F2F7FA,#F2F7FA 10px,#E8EFF5 10px,#E8EFF5 20px);border:1px dashed #9FB3C4;border-radius:12px;padding:22px;text-align:center;color:var(--mut);font-size:14px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.vs div{border:1px solid var(--line);border-radius:12px;padding:12px;font-size:15px}.vs b{color:var(--navy)}
+footer{background:var(--navy);color:#fff;padding:24px 16px;text-align:center;font-size:14px}footer b{display:block;font-size:16px}footer .tl{color:#7FE3EA}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(9,51,94,.08)}
+.bar .btn{max-width:688px;margin:0 auto}
+.scrim{position:fixed;inset:0;background:rgba(9,51,94,.45);z-index:40;opacity:0;pointer-events:none;transition:opacity .2s}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-radius:20px 20px 0 0;padding:10px 16px calc(20px + env(safe-area-inset-bottom));transform:translateY(105%);transition:transform .25s ease;max-width:720px;margin:0 auto}
+.open .scrim{opacity:1;pointer-events:auto}.open .sheet{transform:none}
+.grab{width:44px;height:5px;border-radius:3px;background:#C9D6E1;margin:0 auto 12px}
+.sheet h3{margin:0 0 4px;color:var(--navy);font-size:20px}.sheet .btn{margin-top:10px}
+.close{background:none;border:0;color:var(--mut);font-family:inherit;font-weight:600;font-size:15px;width:100%;min-height:48px;margin-top:6px;cursor:pointer}
+.tag.lvl{background:var(--navy)}.tag.warn{background:#B45309}.ph.tall{min-height:180px;display:flex;align-items:center;justify-content:center}
+</style></head>
+<body>
+
+<header>
+ <div class="brand"><b>Sheridan Medical Consulting</b><span>Better Options, Better Outcomes</span></div>
+ <div class="navwrap"><nav id="nav">
+  <a href="#overview" class="on">Overview</a><a href="#how">How it works</a><a href="#cases">Evidence</a><a href="#details">Details</a><a href="#contact">Contact</a>
+ </nav></div>
+</header>
+<main>
+<section id="overview" class="hero">
+ <p class="eyebrow">Kreate Medical</p>
+ <h1>Redermax&trade; Antibacterial Wound Matrix</h1>
+ <p class="lede">A fully synthetic, absorbable wound matrix with PHMB and no human or animal materials.</p>
+ <button class="btn pri" data-open>Have Sheridan Visit</button>
+ <figure class="heroimg" style="margin:18px 0 0"><img src="assets/redermax/product-pack-shot-sheets_SS.jpg" alt="Kreate Medical matrix sheets"><figcaption>Kreate Medical family product image (SurCura sell sheet). Redermax-specific pack shot pending from Kreate.</figcaption></figure>
+</section>
+<section id="how">
+<p class="eyebrow">How it works</p><h2>Synthetic matrix with PHMB</h2><p class="mut">Per FDA 510(k) summaries K251582 and K261646. Bench and animal testing only.</p><p class="hint">Swipe to see each stage &rarr;</p><div class="steps"><div class="step"><img src="assets/redermax/schematic-1-applied-to-wound-bed_AB.jpg" alt="Matrix placed on wound bed" loading="lazy" style="display:block"><div class="cap" style="padding:4px 10px 0;font-size:12px">Kreate Medical schematic (SurCura Antibacterial sell sheet)</div><div class="t"><span class="d">Step 1</span><h3>Placed dry on the wound</h3><p class="mut" style="margin:4px 0 0">Soft, white, conformable, non-friable sheet. Perforated.</p></div></div><div class="step"><img src="assets/redermax/schematic-2-phmb-elution_AB.jpg" alt="PHMB elution schematic" loading="lazy" style="display:block"><div class="cap" style="padding:4px 10px 0;font-size:12px">Kreate Medical schematic (SurCura Antibacterial sell sheet)</div><div class="t"><span class="d">Step 2</span><h3>PHMB within the matrix</h3><p class="mut" style="margin:4px 0 0">In vitro, PHMB (2.5 wt%) reduces bacterial growth within the matrix for up to 7 days.</p></div></div><div class="step"><img src="assets/redermax/schematic-3-absorbed-incorporated_AB.jpg" alt="Matrix absorbed schematic" loading="lazy" style="display:block"><div class="cap" style="padding:4px 10px 0;font-size:12px">Kreate Medical schematic (SurCura Antibacterial sell sheet)</div><div class="t"><span class="d">Step 3</span><h3>Resorbs</h3><p class="mut" style="margin:4px 0 0">Substantial resorption by Day 14; complete degradation about Day 28 (in vitro and animal data).</p></div></div></div><div class="note"><b>No clinical studies have been conducted, and no clinical benefit has been demonstrated related to the role of this antibacterial.</b> (FDA 510(k) summary)</div>
+</section>
+<section id="cases">
+<p class="eyebrow">Evidence</p><h2>What the evidence includes</h2><div data-gallery="cases"><div class="note" style="margin-top:10px">No Redermax clinical cases or human outcome data on file. Evidence is limited to FDA 510(k) clearance (K251582 / K261646) based on bench and preclinical testing.</div></div><!--/gal--><div class="case" style="margin-top:14px"><div class="hd"><span class="tag lvl">Regulatory</span><h3 style="margin:8px 0 0;color:var(--navy)">FDA 510(k) clearance K251582</h3><p class="mut" style="margin:2px 0 0">Cleared February 2, 2026. Predicate: PuraPly Antimicrobial (K051647).</p></div>
+<div class="facts"><div><span>Evidence type</span>Bench, in vitro and animal (minipig) testing; ISO 10993 biocompatibility</div><div><span>Clinical data</span>None. No clinical studies conducted.</div><div><span>Update</span>K261646 cleared August 14, 2026 for updated labeling; no clinical testing conducted, referenced, or relied upon.</div></div>
+<details><summary><b>Explore full study</b><small>Design, results, limitations, citation</small></summary><div class="body"><ul><li>In vitro: at least 4-log reduction within the matrix up to 7 days (modified AATCC 100)</li><li>In vitro degradation: 90 to 100% mass loss at 28 days</li><li>Sterility assurance level 10<sup>-6</sup></li><li>Does not claim to block bacteria from passing through the device (perforated)</li></ul><p class="mut">Sources: accessdata.fda.gov K251582.pdf and K261646.pdf.</p></div></details></div><div class="ph" style="margin-top:14px">No clinical case studies available. Cases pending from Kreate Medical.</div>
+</section>
+<section id="details">
+ <p class="eyebrow">Details</p>
+ <h2>Product information</h2>
+ <details><summary><b>What it is</b><small>Fully synthetic absorbable matrix</small></summary><div class="body"><ul><li>Electrospun composite fibers of PLGA, PDO, Poloxamer 188 and PHMB (2.5 wt%)</li><li>No human or animal materials</li><li>Sterile, single use, supplied dry in sheet form</li><li>FDA product code FRO; prescription use</li></ul></div></details>
+ <details><summary><b>Indications</b><small>Per FDA 510(k) summary</small></summary><div class="body"><p>Partial and full thickness wounds; pressure, venous, diabetic and chronic vascular ulcers; tunneled/undermined wounds; surgical wounds (donor sites/grafts, post-Mohs, post-laser, podiatric, wound dehiscence); trauma wounds (abrasions, lacerations, partial-thickness or second-degree burns, skin tears); draining wounds.</p><p class="mut">Contraindications and warnings: IFU not on file.</p></div></details>
+ <details><summary><b>Sizes and storage</b><small>Not yet available</small></summary><div class="body"><p class="mut">Sizes, SKUs, storage and shelf life are not in available sources. Request from Kreate Medical.</p></div></details>
+ <details><summary><b>Source documents</b><small>Public regulatory records</small></summary><div class="body"><ul><li>FDA 510(k) K251582 summary, Beijing Kreate Medical Co., Ltd.</li><li>FDA 510(k) K261646 summary</li></ul></div></details>
+ <details><summary><b>Claims check (internal)</b><small>Flags from source verification</small></summary><div class="body"><ul><li>Evidence level: regulatory and preclinical only. No outcome claims on page.</li><li>Absorption differs from SurCura sell sheet (7 to 14 days) vs Redermax FDA (substantial by Day 14, complete about Day 28). Confirm with Kreate.</li><li>Relationship between Redermax, SurCura Antibacterial and the Redermo device in Qian 2026 unconfirmed.</li><li>No Kreate brochure, IFU, images or brand approval on file.</li></ul></div></details>
+
+</section>
+<section id="contact">
+ <p class="eyebrow">Contact</p><h2>Talk with Sheridan</h2>
+ <p>Text Abiad to set up a visit, discuss a patient, or schedule an in-service.</p>
+ <button class="btn pri" data-open>Have Sheridan Visit</button>
+ <p class="mut" style="margin-top:10px">Please do not include patient information in text messages.</p>
+</section>
+</main>
+<footer><b>Sheridan Medical Consulting</b><span class="tl">Better Options, Better Outcomes</span><br><small>For clinicians. Manufacturer materials used with permission.</small></footer>
+<div class="bar"><button class="btn pri" data-open>Have Sheridan Visit</button></div>
+<div class="scrim" data-close></div>
+<div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh" aria-hidden="true">
+ <div class="grab"></div><h3 id="sh">How can we help?</h3><p class="mut" style="margin:0">Opens a text to Abiad. No patient details, please.</p>
+ <a class="btn pri" href="sms:+16464193538?&amp;body=Hi%20Abiad%2C%20I%27d%20like%20Sheridan%20to%20come%20in%20to%20discuss%20Redermax%20by%20Kreate%20Medical.">Have Sheridan Visit</a>
+ <a class="btn sec" href="sms:+16464193538?&amp;body=Hi%20Abiad%2C%20I%20have%20a%20patient%20in%20mind%20for%20Redermax.%20Please%20reach%20out%20to%20set%20up%20a%20time.">Patient in Mind</a>
+ <a class="btn sec" href="sms:+16464193538?&amp;body=Hi%20Abiad%2C%20I%27d%20like%20to%20request%20a%20Redermax%20in-service%20for%20our%20team.">Request In-Service</a>
+ <button class="close" data-close>Cancel</button>
+</div>
+<script>
+(function(){var b=document.body,s=document.querySelector('.sheet'),last;
+function open(e){last=e.currentTarget;b.classList.add('open');s.setAttribute('aria-hidden','false');b.style.overflow='hidden';s.querySelector('a').focus();}
+function close(){b.classList.remove('open');s.setAttribute('aria-hidden','true');b.style.overflow='';if(last)last.focus();}
+document.querySelectorAll('[data-open]').forEach(function(x){x.addEventListener('click',open)});
+document.querySelectorAll('[data-close]').forEach(function(x){x.addEventListener('click',close)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+var links=[].slice.call(document.querySelectorAll('#nav a')),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+if('IntersectionObserver'in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){var i=secs.indexOf(x.target);links.forEach(function(l,j){l.classList.toggle('on',i===j)});links[i].scrollIntoView({block:'nearest',inline:'center'});}})},{rootMargin:'-40% 0px -55% 0px'});secs.forEach(function(x){io.observe(x)});}
+})();
+</script>
+</body></html>
