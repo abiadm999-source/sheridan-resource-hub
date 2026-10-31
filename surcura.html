@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<title>SurCura by Kreate Medical | Sheridan Medical Consulting</title>
+<style>
+:root{--navy:#09335E;--teal:#009FA9;--bg:#fff;--soft:#F2F7FA;--line:#DCE6EE;--txt:#1C2B3A;--mut:#5A6B7B}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font:16px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--txt);background:var(--bg);padding-bottom:96px}
+img{max-width:100%;display:block}
+.draft{background:#FFD600;color:#111;font-weight:700;font-size:13px;text-align:center;padding:8px 12px;letter-spacing:.02em}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+.brand b{color:var(--navy);font-size:15px}.brand span{color:var(--teal);font-size:12px;font-weight:600}
+.navwrap{position:relative}
+nav{display:flex;gap:8px;overflow-x:auto;padding:0 16px 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;min-height:40px;display:flex;align-items:center;padding:0 14px;border-radius:20px;background:var(--soft);color:var(--navy);text-decoration:none;font-weight:600;font-size:15px}
+nav a.on{background:var(--navy);color:#fff}
+.navwrap:after{content:"";position:absolute;right:0;top:0;bottom:10px;width:32px;background:linear-gradient(90deg,rgba(255,255,255,0),#fff);pointer-events:none}
+main{max-width:720px;margin:0 auto}
+section{padding:28px 16px}
+h1{font-size:34px;line-height:1.1;margin:0;color:var(--navy)}
+h2{font-size:22px;color:var(--navy);margin:0 0 6px}
+.eyebrow{color:var(--teal);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin:0 0 6px}
+.lede{font-size:18px;margin:10px 0 18px}
+.mut{color:var(--mut);font-size:14px}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;border:0;border-radius:12px;font-family:inherit;font-weight:700;font-size:17px;line-height:1.2;cursor:pointer;text-decoration:none}
+.btn.pri{background:var(--teal);color:#fff}.btn.sec{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.hero{background:linear-gradient(180deg,var(--soft),#fff)}
+.heroimg{margin-top:18px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff}
+figcaption,.cap{font-size:13px;color:var(--mut);padding:8px 10px}
+.steps{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 12px;-webkit-overflow-scrolling:touch}
+.step{flex:0 0 78%;scroll-snap-align:start;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.step .t{padding:10px 12px}.step .d{display:inline-block;background:var(--navy);color:#fff;font-weight:700;font-size:13px;border-radius:8px;padding:3px 8px}
+.step h3{margin:6px 0 2px;font-size:17px;color:var(--navy)}
+.step img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.hint{font-size:13px;color:var(--teal);font-weight:600}
+.note{background:#FFF8E1;border-left:4px solid #F2B705;padding:10px 12px;font-size:14px;border-radius:6px;margin-top:10px}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.trio figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.trio figcaption{font-size:12px;padding:6px}
+details{border:1px solid var(--line);border-radius:14px;margin:10px 0;background:#fff;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:14px 48px 14px 16px;position:relative;min-height:56px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:16px;top:12px;font-size:24px;color:var(--teal);font-weight:700}
+details[open]>summary:after{content:"\2212"}
+summary b{display:block;color:var(--navy);font-size:17px}summary small{display:block;color:var(--mut);font-size:14px;margin-top:2px}
+.body{padding:0 16px 16px}.body ul{padding-left:20px;margin:6px 0}.body li{margin:4px 0}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}th{color:var(--navy)}
+.case{border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.case .tag{display:inline-block;background:var(--teal);color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px}
+.case .hd{padding:14px 16px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.pair figure{margin:0;background:#fff}.pair img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.facts{display:grid;gap:8px;padding:12px 16px}
+.facts div{background:var(--soft);border-radius:10px;padding:10px 12px}.facts span{display:block;font-size:12px;font-weight:700;color:var(--teal);text-transform:uppercase}
+.case details{margin:0 16px 16px}
+.ph{background:repeating-linear-gradient(45deg,#F2F7FA,#F2F7FA 10px,#E8EFF5 10px,#E8EFF5 20px);border:1px dashed #9FB3C4;border-radius:12px;padding:22px;text-align:center;color:var(--mut);font-size:14px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.vs div{border:1px solid var(--line);border-radius:12px;padding:12px;font-size:15px}.vs b{color:var(--navy)}
+footer{background:var(--navy);color:#fff;padding:24px 16px;text-align:center;font-size:14px}footer b{display:block;font-size:16px}footer .tl{color:#7FE3EA}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px rgba(9,51,94,.08)}
+.bar .btn{max-width:688px;margin:0 auto}
+.scrim{position:fixed;inset:0;background:rgba(9,51,94,.45);z-index:40;opacity:0;pointer-events:none;transition:opacity .2s}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-radius:20px 20px 0 0;padding:10px 16px calc(20px + env(safe-area-inset-bottom));transform:translateY(105%);transition:transform .25s ease;max-width:720px;margin:0 auto}
+.open .scrim{opacity:1;pointer-events:auto}.open .sheet{transform:none}
+.grab{width:44px;height:5px;border-radius:3px;background:#C9D6E1;margin:0 auto 12px}
+.sheet h3{margin:0 0 4px;color:var(--navy);font-size:20px}.sheet .btn{margin-top:10px}
+.close{background:none;border:0;color:var(--mut);font-family:inherit;font-weight:600;font-size:15px;width:100%;min-height:48px;margin-top:6px;cursor:pointer}
+</style></head>
+<body>
+
+<header>
+ <div class="brand"><b>Sheridan Medical Consulting</b><span>Better Options, Better Outcomes</span></div>
+ <div class="navwrap"><nav id="nav">
+  <a href="#overview" class="on">Overview</a><a href="#how">How it works</a><a href="#cases">Cases</a><a href="#details">Details</a><a href="#contact">Contact</a>
+ </nav></div>
+</header>
+<main>
+<section id="overview" class="hero">
+ <p class="eyebrow">Kreate Medical</p>
+ <h1>SurCura&trade; Wound Matrix</h1>
+ <p class="lede">A fully synthetic, absorbable, electrospun wound matrix that is soft and conformable.</p>
+ <button class="btn pri" data-open>Have Sheridan Visit</button>
+ <figure class="heroimg" style="margin:18px 0 0"><img src="assets/product-pack-shot-sheets_SS.jpg" alt="SurCura sheets, product image from Kreate Medical sell sheet"><figcaption>Product image from Kreate Medical sell sheet. Manufacturer-approved for internal Resource Hub use.</figcaption></figure>
+</section>
+
+<section id="how">
+ <p class="eyebrow">How it works</p>
+ <h2>From placement to absorption</h2>
+ <p class="mut">Per Kreate: applied after debridement, it degrades into lactate-rich byproducts and fully absorbs in approximately 7 to 14 days.</p>
+ <div class="trio">
+  <figure><img src="assets/schematic-1-applied-to-wound-bed_AB.jpg" alt="Schematic: matrix placed on wound bed"><figcaption>1. Conforms to wound bed</figcaption></figure>
+  <figure><img src="assets/schematic-2-phmb-elution_AB.jpg" alt="Schematic: PHMB elution"><figcaption>2. PHMB elution (Antibacterial)</figcaption></figure>
+  <figure><img src="assets/schematic-3-absorbed-incorporated_AB.jpg" alt="Schematic: incorporated and absorbed"><figcaption>3. Incorporates and absorbs</figcaption></figure>
+ </div>
+ <p class="cap">Schematics from Kreate Medical Antibacterial sell sheet. Manufacturer-approved for internal Resource Hub use.</p>
+ <h2 style="margin-top:18px;font-size:18px">Preclinical timeline</h2>
+ <p class="hint">Swipe to see each stage &rarr;</p>
+ <div class="steps">
+  <div class="step"><img src="assets/preclinical-histology-day1_AB.jpg" alt="Histology Day 1"><div class="t"><span class="d">Day 1</span><h3>Cell adhesion and infiltration</h3></div></div>
+  <div class="step"><img src="assets/preclinical-histology-day3_AB.jpg" alt="Histology Day 3"><div class="t"><span class="d">Day 3</span><h3>Initial incorporation</h3></div></div>
+  <div class="step"><img src="assets/preclinical-histology-day3-5_AB.jpg" alt="Histology Day 3 to 5"><div class="t"><span class="d">Day 3 to 5</span><h3>Neovascularization</h3></div></div>
+  <div class="step"><img src="assets/preclinical-histology-day7-10_AB.jpg" alt="Histology Day 7 to 10"><div class="t"><span class="d">Day 7 to 10</span><h3>Granular tissue formation and device degradation</h3></div></div>
+ </div>
+ <p class="cap">Preclinical rodent model, full-thickness defects (Kreate data on file). Green arrows: newly formed ECM tissue. Blue: new blood vessels. Black: SurCura fibers.</p>
+ <div class="note"><b>Pre-clinical results are not necessarily indicative of clinical outcomes.</b></div>
+</section>
+
+<section id="cases">
+ <p class="eyebrow">Case study</p>
+ <h2>Manufacturer case report</h2>
+ <div class="case">
+  <div class="hd"><span class="tag">Manufacturer case report</span><h3 style="margin:8px 0 0;color:var(--navy)">Refractory Stage 3 sacral pressure injury</h3><p class="mut" style="margin:2px 0 0">SurCura Antibacterial Wound Matrix. Single case.</p></div>
+  <div class="pair">
+   <figure><div style="padding:14px;background:#eef6f7;border-radius:10px;font-size:14px;color:#123">Patient case photos held pending confirmed publication consent. Ask Sheridan for manufacturer case materials. </div><figcaption><b>Day 0</b> Before treatment</figcaption></figure>
+   <figure><div style="padding:14px;background:#eef6f7;border-radius:10px;font-size:14px;color:#123">Patient case photos held pending confirmed publication consent. Ask Sheridan for manufacturer case materials. </div><figcaption><b>Day 5</b> Single application</figcaption></figure>
+  </div>
+  <p class="cap">Manufacturer case imagery (Kreate Medical sell sheet). Manufacturer-approved for internal Resource Hub use.</p>
+  <div class="facts">
+   <div><span>Wound type</span>Stage 3 sacral pressure injury, male, 76</div>
+   <div><span>Timeline</span>Stalled after two NPWT episodes over 10 days. Single application, reviewed at Day 5.</div>
+   <div><span>Documented outcome (Day 5)</span>Necrotic tissue largely cleared, granulation proliferating, epithelial migration. Described as graft-ready.</div>
+  </div>
+  <details><summary><b>Explore full case</b><small>Baseline, Day 5 findings, comorbidities</small></summary><div class="body">
+   <p><b>Day 0, before treatment</b></p><ul><li>Non-viable wound bed; thick, adherent slough covering more than 70% of wound bed</li><li>Wound margins edematous, irregular, with signs of undermining</li><li>Wound stalled in chronic inflammatory phase despite two NPWT episodes over 10 days, not suitable for skin grafting</li></ul>
+   <p><b>Day 5, single application</b></p><ul><li>Necrotic tissue dissolved and largely cleared; robust, well-vascularized granulation tissue proliferating across wound bed</li><li>Active epithelial migration from wound margins; wound area visibly contracted with cleaner, well-defined edges</li><li>Wound phase transitioned from stagnation to active proliferative repair, graft-ready</li></ul>
+   <p><b>Comorbidities:</b> severe malnutrition, severe pneumonia, left femoral neck fracture, moderate anemia, lower extremity DVT, prolonged immobilization, tracheostomy.</p>
+   <p class="mut">Source: Kreate Medical Antibacterial sell sheet (KM-MKT-20260001bEN), ref 23, "data on file, clinical case study and clinical compendium." Full case report not on file. Single case; not evidence of typical results.</p>
+  </div></details>
+ </div>
+<details style="margin-top:14px"><summary><b>Published pilot study: Qian 2026</b><small>Prospective single-arm pilot, n=15. Device identity to confirm.</small></summary><div class="body">
+<p><span class="case"><span class="tag" style="display:inline-block;background:var(--navy);color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px">Single-arm pilot (low evidence level)</span></span></p>
+<ul><li>Single site, single arm; 15 chronic lower extremity wounds (5 DFU, 8 VLU, 2 PU) refractory to standard care</li><li>Weekly application for 4 weeks</li><li>Mean wound area reduction 83.6% at 4 weeks</li><li>7 of 15 healed, mean time about 13.9 days</li><li>No adverse events reported; no control group</li></ul>
+<div class="note">Kreate cites this related synthetic matrix data. The paper names the device "Redermo" (non-antibacterial). Confirm device identity with Kreate before equating to SurCura. Not a SurCura Antibacterial RCT. A Kreate founder is a co-author.</div>
+<p class="mut">Qian L, et al. Int Wound J. 2026;23(4):e70908. Open access (PMC13062494).</p></div></details>
+ <div class="ph" style="margin-top:14px">Additional cases pending from Kreate Medical</div>
+</section>
+
+<section id="details">
+ <p class="eyebrow">Details</p>
+ <h2>Product information</h2>
+ <details><summary><b>What it is</b><small>Synthetic electrospun matrix resembling native ECM</small></summary><div class="body">
+  <img src="assets/sem-electrospun-fibers_SS.jpg" alt="SEM image of electrospun fibers" style="border-radius:10px"><p class="cap">SEM image, Kreate Medical sell sheet. Manufacturer-approved for internal Resource Hub use.</p>
+  <ul><li>100% synthetic, absorbable, electrospun fiber matrix resembling native ECM</li><li>Soft and conformable; adheres to the contour of the wound bed</li><li>Easy placement and manipulation whether wet or dry</li><li>Pre-fenestrated, highly hydrophilic for fluid management and enhanced NPWT compatibility</li></ul>
+  <img src="assets/product-conformable-on-hand_SS.jpg" alt="Matrix conforming to a hand" style="border-radius:10px;margin-top:8px"><p class="cap">Product image, Kreate Medical sell sheet. Manufacturer-approved for internal Resource Hub use.</p>
+ </div></details>
+ <details><summary><b>Mechanism</b><small>Scaffold, MMP-stable, lactate-rich degradation</small></summary><div class="body"><ul>
+  <li>Demonstrated scaffolding effect for fibroblast adhesion, infiltration and proliferation (in vitro)</li>
+  <li>MMPs-stable, enabling immediate application following debridement</li>
+  <li>Lactate-rich, pH-lowering degradants to stimulate granular tissue formation and neovascularization</li>
+  <li>Programmed degradation in sync with physiological healing; fully absorbs in approximately 7 to 14 days</li></ul><p class="mut">As stated by Kreate Medical; supporting studies are Kreate data on file.</p></div></details>
+ <details><summary><b>Indications</b><small>Partial and full thickness wounds, single use</small></summary><div class="body">
+  <p><b>SurCura Wound Matrix:</b> sterile, single-use device for partial and full thickness wounds, including pressure sores/ulcers, venous ulcers, diabetic ulcers, chronic vascular ulcers, tunneled/undermined wounds, surgical wounds, trauma wounds and draining wounds. Single application, may be reapplied every 7 to 14 days.</p>
+  <p><b>SurCura Antibacterial:</b> same, with surgical wounds (donor sites/grafts, post-Mohs surgery, post-laser surgery, podiatric, wound dehiscence) and trauma wounds (abrasions, lacerations, partial-thickness burns, skin tears).</p></div></details>
+ <details><summary><b>Contraindications and warnings</b><small>Review before use. Differs by product.</small></summary><div class="body">
+  <p><b>SurCura Wound Matrix</b></p><ul><li>NOT indicated for patients with known sensitivity to resorbable suture materials</li><li>NOT indicated for children under 21 or pregnant or breastfeeding women</li></ul>
+  <p><b>SurCura Antibacterial Wound Matrix</b></p><ul><li>NOT indicated for third degree burns</li><li>Not studied in wounds that extend into tendon, muscle, joint capsule or bone</li><li>NOT indicated for known sensitivity to resorbable suture materials or to PHMB</li><li>Not studied in children under 18 or pregnant or breastfeeding women</li><li>Do not apply until excessive exudate, bleeding, significant swelling and acute infection are controlled</li><li>No more than 75 cm&sup2; concurrent exposure per patient, per day</li></ul>
+  <p class="mut">Consult the manufacturer IFU (not yet on file).</p></div></details>
+ <details><summary><b>Sizes and SKUs</b><small>Disc and three sheet sizes</small></summary><div class="body">
+  <table><tr><th>Size</th><th>SurCura</th><th>Antibacterial</th><th>cm&sup2;</th></tr>
+  <tr><td>14 mm disc</td><td>SCWM-55D</td><td>SCAB-55D</td><td>1.54</td></tr>
+  <tr><td>2.5 x 2.5 cm</td><td>SCWM-0101</td><td>SCAB-0101</td><td>6.25</td></tr>
+  <tr><td>5 x 5 cm</td><td>SCWM-0202</td><td>SCAB-0202</td><td>25</td></tr>
+  <tr><td>5 x 7.5 cm</td><td>SCWM-0203</td><td>SCAB-0203</td><td>37.5</td></tr></table>
+  <p class="mut">Storage and shelf life not stated in available materials.</p></div></details>
+ <details><summary><b>Antibacterial (PHMB) facts</b><small>In vitro data. No clinical benefit demonstrated.</small></summary><div class="body">
+  <img src="assets/schematic-phmb-matrix_AB.jpg" alt="PHMB in matrix schematic" style="border-radius:10px;max-width:260px"><p class="cap">Schematic, Kreate Medical sell sheet. Manufacturer-approved for internal Resource Hub use.</p>
+  <ul><li>Local, sustained PHMB (polyhexamethylene biguanide) elution; therapeutic level within 1 hour, sustained up to 7 days</li><li>Based on in vitro testing, PHMB reduces the growth of bacteria within the wound matrix for up to 7 days</li><li>Broad-spectrum 99.99% bactericidal efficacy (in vitro)</li><li>May help control biofilm reformation after debridement</li><li>High tissue compatibility and no known acquired bacterial resistance, as compared to ionic and metallic silver (per Kreate)</li></ul>
+  <div class="note"><b>No clinical benefit has been demonstrated related to the role of the antibacterial agent.</b></div></div></details>
+ <details><summary><b>Two versions</b><small>Wound Matrix and Antibacterial share sizes</small></summary><div class="body"><div class="vs">
+  <div><b>SurCura Wound Matrix</b><br>SCWM SKUs. Core synthetic matrix.</div><div><b>SurCura Antibacterial</b><br>SCAB SKUs. Same matrix with PHMB.</div></div></div></details>
+ <details><summary><b>Source documents</b><small>Manufacturer materials used for this page</small></summary><div class="body"><ul>
+  <li>SurCura Sell Sheet (KM-MKT-20260009aEN)</li><li>SurCura Antibacterial Sell Sheet (KM-MKT-20260001bEN)</li>
+  <li>Cited study: L. Qian et al., Clinical Evaluation of a Novel Synthetic Nanofiber Wound Matrix for the Treatment of Chronic Wounds, Int Wound J 23(4) 2026: e70908 (full text reviewed; see evidence card)</li>
+  <li>Kreate Medical Inc., Alpharetta, GA. 1-866-432-5425. kreatemed.com</li></ul></div></details>
+ <details><summary><b>Claims check (internal)</b><small>Flags from source verification</small></summary><div class="body"><ul>
+  <li>All statements above are drawn from Kreate sell sheets. No Sheridan efficacy claims.</li>
+  <li>PHMB 99.99%, 7-day elution: in vitro only.</li>
+  <li>Timeline: preclinical rodent model only.</li>
+  <li>Case: single manufacturer case; full report (ref 23) not on file.</li>
+  <li>Mechanism and scaffold claims: Kreate data on file, not independently reviewed.</li>
+  <li>Excluded: "world's first and only" (internal market research), "Accelerated Healing" headline, comparison icons vs ECM/xenograft/foam, any healing rates or pricing.</li>
+  <li>Age wording differs by product (21 vs 18); quoted per sheet.</li>
+  <li>IFU not on file: storage, shelf life and application steps unverified.</li>
+  <li>All images: Kreate copyright, web reuse not yet approved.</li></ul></div></details>
+</section>
+
+<section id="contact">
+ <p class="eyebrow">Contact</p><h2>Talk with Sheridan</h2>
+ <p>Text Abiad to set up a visit, discuss a patient, or schedule an in-service.</p>
+ <button class="btn pri" data-open>Have Sheridan Visit</button>
+ <p class="mut" style="margin-top:10px">Please do not include patient information in text messages.</p>
+</section>
+</main>
+<footer><b>Sheridan Medical Consulting</b><span class="tl">Better Options, Better Outcomes</span><br><small>For clinicians. Manufacturer materials used with permission.</small></footer>
+
+<div class="bar"><button class="btn pri" data-open>Have Sheridan Visit</button></div>
+<div class="scrim" data-close></div>
+<div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh" aria-hidden="true">
+ <div class="grab"></div><h3 id="sh">How can we help?</h3><p class="mut" style="margin:0">Opens a text to Abiad. No patient details, please.</p>
+ <a class="btn pri" href="sms:+16464193538?&amp;body=Hi%20Abiad%2C%20I%27d%20like%20Sheridan%20to%20come%20in%20to%20discuss%20SurCura%20by%20Kreate%20Medical.">Have Sheridan Visit</a>
+ <a class="btn sec" href="sms:+16464193538?&amp;body=Hi%20Abiad%2C%20I%20have%20a%20patient%20in%20mind%20for%20SurCura.%20Please%20reach%20out%20to%20set%20up%20a%20time.">Patient in Mind</a>
+ <a class="btn sec" href="sms:+16464193538?&amp;body=Hi%20Abiad%2C%20I%27d%20like%20to%20request%20a%20SurCura%20in-service%20for%20our%20team.">Request In-Service</a>
+ <button class="close" data-close>Cancel</button>
+</div>
+<script>
+(function(){var b=document.body,s=document.querySelector('.sheet'),last;
+function open(e){last=e.currentTarget;b.classList.add('open');s.setAttribute('aria-hidden','false');b.style.overflow='hidden';s.querySelector('a').focus();}
+function close(){b.classList.remove('open');s.setAttribute('aria-hidden','true');b.style.overflow='';if(last)last.focus();}
+document.querySelectorAll('[data-open]').forEach(function(x){x.addEventListener('click',open)});
+document.querySelectorAll('[data-close]').forEach(function(x){x.addEventListener('click',close)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+var links=[].slice.call(document.querySelectorAll('#nav a')),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+if('IntersectionObserver'in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){var i=secs.indexOf(x.target);links.forEach(function(l,j){l.classList.toggle('on',i===j)});links[i].scrollIntoView({block:'nearest',inline:'center'});}})},{rootMargin:'-40% 0px -55% 0px'});secs.forEach(function(x){io.observe(x)});}
+})();
+</script>
+</body></html>
